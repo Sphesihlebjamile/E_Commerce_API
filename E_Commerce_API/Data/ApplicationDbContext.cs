@@ -5,7 +5,7 @@
     {
 
         public ApplicationDbContext(
-            DbContextOptions options)
+            DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
             
@@ -18,5 +18,26 @@
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Shipment> Shipments { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Product>()
+                .HasData(
+                    new {
+                        Id = Guid.NewGuid(),
+                        Name = "D5 Wifi SLR Camera",
+                        Price = 1298,
+                        Description = "The perfect Canon Camera for content creation"
+                    },
+                    new {
+                        Id = Guid.NewGuid(),
+                        Name = "Godox AD400PRO",
+                        Price = 14495,
+                        Description = "Godox AD400PRO, All In One Outdoor Flash",
+                    }
+                );
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
