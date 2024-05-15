@@ -26,13 +26,13 @@
                     new {
                         Id = Guid.NewGuid(),
                         Name = "D5 Wifi SLR Camera",
-                        Price = 1298,
+                        Price = 1298.00,
                         Description = "The perfect Canon Camera for content creation"
                     },
                     new {
                         Id = Guid.NewGuid(),
                         Name = "Godox AD400PRO",
-                        Price = 14495,
+                        Price = 14495.00,
                         Description = "Godox AD400PRO, All In One Outdoor Flash",
                     }
                 );

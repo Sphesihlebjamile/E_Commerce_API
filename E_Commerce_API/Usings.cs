@@ -5,6 +5,8 @@ global using System.Threading.Tasks;
 global using Microsoft.EntityFrameworkCore;
 global using System.ComponentModel.DataAnnotations;
 global using System.ComponentModel.DataAnnotations.Schema;
+global using E_Commerce_API.Data;
+
 namespace E_Commerce_API
 {
     public class Usings
