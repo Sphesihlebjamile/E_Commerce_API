@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace E_Commerce_API.Data
+﻿namespace E_Commerce_API.Data
 {
     public class User
     {

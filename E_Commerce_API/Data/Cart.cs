@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace E_Commerce_API.Data
+﻿namespace E_Commerce_API.Data
 {
     public class Cart
     {
