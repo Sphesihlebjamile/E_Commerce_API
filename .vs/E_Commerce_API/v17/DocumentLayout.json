@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SphesihleJ\\Videos\\Signiflow_Test\\E_Commerce_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4725D1BB-9BD8-40B9-B2B8-B0072AA458AE}|E_Commerce_API\\E_Commerce_API.csproj|c:\\users\\sphesihlej\\videos\\signiflow_test\\e_commerce_api\\e_commerce_api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4725D1BB-9BD8-40B9-B2B8-B0072AA458AE}|E_Commerce_API\\E_Commerce_API.csproj|solutionrelative:e_commerce_api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4725D1BB-9BD8-40B9-B2B8-B0072AA458AE}|E_Commerce_API\\E_Commerce_API.csproj|c:\\users\\sphesihlej\\videos\\signiflow_test\\e_commerce_api\\e_commerce_api\\data\\wishlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4725D1BB-9BD8-40B9-B2B8-B0072AA458AE}|E_Commerce_API\\E_Commerce_API.csproj|solutionrelative:e_commerce_api\\data\\wishlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4725D1BB-9BD8-40B9-B2B8-B0072AA458AE}|E_Commerce_API\\E_Commerce_API.csproj|c:\\users\\sphesihlej\\videos\\signiflow_test\\e_commerce_api\\e_commerce_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4725D1BB-9BD8-40B9-B2B8-B0072AA458AE}|E_Commerce_API\\E_Commerce_API.csproj|solutionrelative:e_commerce_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 387,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Wishlist.cs",
+              "DocumentMoniker": "C:\\Users\\SphesihleJ\\Videos\\Signiflow_Test\\E_Commerce_API\\E_Commerce_API\\Data\\Wishlist.cs",
+              "RelativeDocumentMoniker": "E_Commerce_API\\Data\\Wishlist.cs",
+              "ToolTip": "C:\\Users\\SphesihleJ\\Videos\\Signiflow_Test\\E_Commerce_API\\E_Commerce_API\\Data\\Wishlist.cs",
+              "RelativeToolTip": "E_Commerce_API\\Data\\Wishlist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T08:42:57.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\SphesihleJ\\Videos\\Signiflow_Test\\E_Commerce_API\\E_Commerce_API\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "E_Commerce_API\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\SphesihleJ\\Videos\\Signiflow_Test\\E_Commerce_API\\E_Commerce_API\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "E_Commerce_API\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T08:20:47.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\SphesihleJ\\Videos\\Signiflow_Test\\E_Commerce_API\\E_Commerce_API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "E_Commerce_API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\SphesihleJ\\Videos\\Signiflow_Test\\E_Commerce_API\\E_Commerce_API\\appsettings.Development.json",
+              "RelativeToolTip": "E_Commerce_API\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAADBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-15T08:16:50.829Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
