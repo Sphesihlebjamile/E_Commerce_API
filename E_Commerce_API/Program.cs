@@ -1,4 +1,7 @@
 
+using E_Commerce_API.Repositories.Abstract;
+using E_Commerce_API.Repositories.Concrete;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +15,9 @@ builder.Services.AddDbContext<ApplicationDbContext>
     (options => {
         options.UseSqlServer(builder.Configuration.GetConnectionString("docker_database"));
     });
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
