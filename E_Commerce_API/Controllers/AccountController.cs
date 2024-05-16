@@ -1,13 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
-using E_Commerce_API.DTOs;
-using E_Commerce_API.Helpers;
-using E_Commerce_API.Repositories.Abstract;
-using Microsoft.AspNetCore.Mvc;
-
 namespace E_Commerce_API.Controllers
 {
     [ApiController]
@@ -22,9 +12,8 @@ namespace E_Commerce_API.Controllers
         public async Task<ActionResult<ApiResponse>> GetAllAsync(){
             try{
                 if(await _unitOfWork.UserRepository.GetAllAsync()
-                    is not List<User> users){
-                        return NoContent();
-                    }
+                    is not List<User> users)
+                    return NoContent();
                 
                 var userDTOs = users.Select(user => new UserDTO{
                     Id = user.Id,
@@ -110,24 +99,22 @@ namespace E_Commerce_API.Controllers
                     });
 
                 if(await _unitOfWork.UserRepository.ValidateEmail
-                        (userDTO.Email) is true){
-                            return BadRequest(new ApiResponse{
+                        (userDTO.Email) is true)
+                        return BadRequest(new ApiResponse{
                                 Message = ExceptionMessages.User_Email_Invalid,
                                 Data = null,
                                 StatusCode = HttpStatusCode.BadRequest,
                                 IsSuccess = false
                             });
-                        }
 
                 if(await _unitOfWork.UserRepository.ValidateUsername
-                        (userDTO.Email) is true){
-                            return BadRequest(new ApiResponse{
+                        (userDTO.Email) is true)
+                        return BadRequest(new ApiResponse{
                                 Message = ExceptionMessages.User_Username_Invalid,
                                 Data = null,
                                 StatusCode = HttpStatusCode.BadRequest,
                                 IsSuccess = false
                             });
-                        }
                 
                 if(!_unitOfWork.ValidationRepsitory.IsPhoneNumberValid(userDTO.PhoneNumber))
                     return BadRequest(new ApiResponse{
@@ -191,9 +178,8 @@ namespace E_Commerce_API.Controllers
             try{
                 if(await _unitOfWork.UserRepository.LoginAsync(
                     loginDTO.Username, loginDTO.Password
-                ) is not true){
+                ) is not true)
                     return NotFound();
-                }
 
                 return Ok();
             }

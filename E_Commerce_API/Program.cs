@@ -1,7 +1,4 @@
 
-using E_Commerce_API.Repositories.Abstract;
-using E_Commerce_API.Repositories.Concrete;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

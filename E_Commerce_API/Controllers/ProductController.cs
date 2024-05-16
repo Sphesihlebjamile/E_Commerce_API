@@ -1,21 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
-using E_Commerce_API.DTOs;
-using E_Commerce_API.Helpers;
-using E_Commerce_API.Repositories.Abstract;
-using Microsoft.AspNetCore.Mvc;
-
 namespace E_Commerce_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
     public class ProductController(
         IUnitOfWork unitOfWork
-        )
-                : ControllerBase
+        ) : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
 
@@ -24,9 +13,8 @@ namespace E_Commerce_API.Controllers
 
             try{
                 if(await _unitOfWork.ProductRepository.GetAllAsync()
-                is not List<Product> products){
+                    is not List<Product> products)
                     return NoContent();
-                }
 
                 List<ProductsRequestDTO> productDTOs = products.Select
                     (prod => new ProductsRequestDTO{
@@ -63,9 +51,8 @@ namespace E_Commerce_API.Controllers
         {
             try{
                 if(await _unitOfWork.ProductRepository.GetById(id)
-                    is not Product product){
-                        return NoContent();
-                    }
+                    is not Product product)
+                    return NoContent();
                 
                 var productDTO = new ProductsRequestDTO{
                     Id = product.Id,
@@ -95,16 +82,15 @@ namespace E_Commerce_API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ApiResponse>> AddProduct(ProductInsertDTO productInsertDTO)
+        public async Task<ActionResult<ApiResponse>> AddProductAsync(ProductInsertDTO productInsertDTO)
         {
-            if(!ModelState.IsValid){
+            if(!ModelState.IsValid)
                 return BadRequest(new ApiResponse{
                     Message = ExceptionMessages.InvalidParameterData,
                     Data = null,
                     IsSuccess = false,
                     StatusCode = HttpStatusCode.BadRequest
                 });
-            }
 
             try{
 
@@ -144,7 +130,7 @@ namespace E_Commerce_API.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<ApiResponse>> Edit(Guid id, ProductsRequestDTO updatedProduct)
+        public async Task<ActionResult<ApiResponse>> EditAsync(Guid id, ProductUpdateDTO updatedProduct)
         {
             try{
 
@@ -158,9 +144,7 @@ namespace E_Commerce_API.Controllers
 
                 if(await _unitOfWork.ProductRepository.GetById(id)
                     is not Product oldProduct)
-                    {
-                        return NotFound();
-                    }
+                    return NotFound();
                 
                 oldProduct.Name = updatedProduct.Name;
                 oldProduct.CategoryId = updatedProduct.CategoryId;
@@ -195,7 +179,7 @@ namespace E_Commerce_API.Controllers
             try{
 
                 if(await _unitOfWork.ProductRepository.GetById(id)
-                    is not Product)
+                    is null)
                     {
                         return NotFound();
                     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\a_projets\\E_Commerce_API\\E_Commerce_API\\E_Commerce_API.csproj": {}
+    "E:\\a_projets\\E_Commerce_API\\E_Commerce_API\\E_Commerce_API.csproj": {}
   },
   "projects": {
-    "e:\\a_projets\\E_Commerce_API\\E_Commerce_API\\E_Commerce_API.csproj": {
+    "E:\\a_projets\\E_Commerce_API\\E_Commerce_API\\E_Commerce_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\a_projets\\E_Commerce_API\\E_Commerce_API\\E_Commerce_API.csproj",
+        "projectUniqueName": "E:\\a_projets\\E_Commerce_API\\E_Commerce_API\\E_Commerce_API.csproj",
         "projectName": "E_Commerce_API",
-        "projectPath": "e:\\a_projets\\E_Commerce_API\\E_Commerce_API\\E_Commerce_API.csproj",
+        "projectPath": "E:\\a_projets\\E_Commerce_API\\E_Commerce_API\\E_Commerce_API.csproj",
         "packagesPath": "C:\\Users\\SphesihleJ\\.nuget\\packages\\",
-        "outputPath": "e:\\a_projets\\E_Commerce_API\\E_Commerce_API\\obj\\",
+        "outputPath": "E:\\a_projets\\E_Commerce_API\\E_Commerce_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
