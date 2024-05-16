@@ -14,14 +14,20 @@ namespace E_Commerce_API.Repositories.Concrete
 
         public UnitOfWork(
             ApplicationDbContext dbContext,
-            IProductRepository productRepository
+            IProductRepository productRepository,
+            IUserRepository userRepository,
+            IValidationRepsitory validationRepsitory
         )
         {
             _dbContext = dbContext;
             ProductRepository = productRepository;
+            UserRepository = userRepository;
+            ValidationRepsitory = validationRepsitory;
         }
 
         public IProductRepository ProductRepository { get; set; }
+        public IUserRepository UserRepository { get; set; }
+        public IValidationRepsitory ValidationRepsitory { get; set; }
 
         public async Task SaveChangesAsync()
         {

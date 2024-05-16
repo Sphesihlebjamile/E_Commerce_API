@@ -12,17 +12,12 @@ namespace E_Commerce_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class ProductController 
-        : ControllerBase
-    {
-        private readonly IUnitOfWork _unitOfWork;
-        
-        public ProductController(
-            IUnitOfWork unitOfWork
+    public class ProductController(
+        IUnitOfWork unitOfWork
         )
-        {
-            _unitOfWork = unitOfWork;
-        }
+                : ControllerBase
+    {
+        private readonly IUnitOfWork _unitOfWork = unitOfWork;
 
         [HttpGet]
         public async Task<ActionResult<ApiResponse>> GetAllAsync(){
