@@ -12,7 +12,8 @@ namespace E_Commerce_API.Repositories.Concrete
             IProductRepository productRepository,
             IUserRepository userRepository,
             IValidationRepsitory validationRepsitory,
-            ICartRepository cartRepository
+            ICartRepository cartRepository,
+            ICategoryRepository categoryRepository
         )
         {
             _dbContext = dbContext;
@@ -20,12 +21,14 @@ namespace E_Commerce_API.Repositories.Concrete
             UserRepository = userRepository;
             ValidationRepsitory = validationRepsitory;
             CartRepository = cartRepository;
+            CategoryRepository = categoryRepository;
         }
 
         public IProductRepository ProductRepository { get; set; }
         public IUserRepository UserRepository { get; set; }
         public IValidationRepsitory ValidationRepsitory { get; set; }
         public ICartRepository CartRepository { get; set; }
+        public ICategoryRepository CategoryRepository { get; set; }
 
         public async Task SaveChangesAsync()
         {

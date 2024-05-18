@@ -136,7 +136,7 @@ namespace E_Commerce_API.Controllers
 
                 if(id != updatedProduct.Id)
                     return BadRequest(new ApiResponse{
-                        Message = ExceptionMessages.Product_Edit_IdsDontMatch,
+                        Message = ExceptionMessages.Edit_IdsDontMatch,
                         Data = null,
                         IsSuccess = false,
                         StatusCode = HttpStatusCode.BadRequest
